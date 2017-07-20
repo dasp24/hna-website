@@ -8,6 +8,7 @@
       font-family: Helvetica, Arial, sans-serif;
     }
     ul.header li {
+
       display: inline;
       list-style-type: none;
       margin: 0;
@@ -37,12 +38,33 @@
     .active {
     background-color: #383838;
 }
-    #logo{
+    #mainLogo{
+      position: absolute;
+      left:0;
      width: 300px;
     height: auto;
     }
 
     #contact_details{
+      float:right
+    }
+
+    #telephone{
       float:right;
+      width:20px
+    }
+    .logo{
+      float:right;
+      width:40px;
+      top: 20px;
+    }
+
+    .header{
+      position: absolute;
+      top:100px;
+    }
+    .content{
+      position: absolute;
+      top:200px;
     }
   
