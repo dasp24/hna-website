@@ -10,29 +10,58 @@ import {Route,
 const Website = (props) => {
     return (
       <div>
-         <div>
-        <img src={('./newlogo.jpg')} id='mainLogo'/>
-        <a id='contact_details'>0161 202 1199</a>
-        <img src={('./telephoneSymbol.jpeg')} id='telephone'/>
-          <div className='col-md-6'>
-            <a href='https://www.facebook.com/HnaFacilitiestvFilmLocationFacilityVehicles/'><img  className='logo' src={('./fbLogo.jpeg')} /></a>
-            <a  href='https://twitter.com/hnafacilities'><img className='logo' src={('./instagramLogo.png')}/></a>
-            <a  href='https://www.instagram.com/?hl=en'><img className='logo' src={('./twitterLogo.jpeg')}/></a>
-          </div>
+        <div>
+            <img src={('./newlogo.jpg')} id='mainLogo'/>
+            <a id='contact_details'>0161 202 1199</a>
+            <img src={('./telephoneSymbol.jpeg')} id='telephone'/>
+            <div className='col-md-6'>
+              <a href='https://www.facebook.com/HnaFacilitiestvFilmLocationFacilityVehicles/'><img  className='logo' src={('./fbLogo.jpeg')} /></a>
+              <a  href='https://twitter.com/hnafacilities'><img className='logo' src={('./instagramLogo.png')}/></a>
+              <a  href='https://www.instagram.com/?hl=en'><img className='logo' src={('./twitterLogo.jpeg')}/></a>
+            </div>
         </div>
-        <ul className="header">
+
+        <div className="container-fluid">
+          <ul className="header nav navbar-nav">
             <li><NavLink to="/" exact activeClassName="active">Home</NavLink></li>  
-          
-          <li><NavLink to="/star" activeClassName="active">Star Trailers</NavLink></li>
-          <li><NavLink to="/2-way" activeClassName="active">2-way Trailers</NavLink></li>
-    
-          <li><NavLink to="/costume" activeClassName="active">Costume Trailers</NavLink></li>
-        </ul>
-        <ul className="footer">
-          <li><NavLink to="/contact" activeClassName="active">Contact Us</NavLink></li>
-          <li><NavLink to="/about" activeClassName="active">About us</NavLink></li>
-        </ul>
-        <a id="copywrite">This is copywrited by people who do stuff</a> 
+              <li className="dropdown">
+                <a className="dropdown-toggle" data-toggle="dropdown">Artist Trailers<span className="caret"></span></a>
+                <ul className="dropdown-menu">
+                  <li><NavLink to="/star">Star Trailers</NavLink></li>
+                  <li><NavLink to="/2-way">2-way Trailers</NavLink></li>
+                  <li><NavLink to="/3-way">3-way Trailers</NavLink></li>
+                  <li><NavLink to="/4-way">4-way Trailers</NavLink></li>
+                </ul>
+              </li>
+            <li><NavLink to="/costume" activeClassName="active">Costume Trailers</NavLink></li>
+            <li><NavLink to="/makeup" activeClassName="active">Make up Trailers</NavLink></li>
+            <li><NavLink to="/production" activeClassName="active">Production trailers</NavLink></li>
+            <li><NavLink to="/dining" activeClassName="active">Dining Trailers</NavLink></li>
+            <li><NavLink to="/honey" activeClassName="active">Honey Wagons</NavLink></li>
+            <li><NavLink to="/technical" activeClassName="active">Technicals Vehicles</NavLink></li>
+            <li>
+              <a>Support Vehicles</a>
+              <ul className="hover-menu">
+                <li><NavLink to="/water" activeClassName="active">Water Bowsers</NavLink></li>
+                <li><NavLink to="/generators" activeClassName="active">Generators</NavLink></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <nav className="navbar navbar-inverse navbar-fixed-bottom">
+          <div className="container-fluid">
+            <div className="navbar-header">
+              <a className="navbar-brand">HnA Facilities</a>
+            </div>
+            <ul className="nav navbar-nav">
+              <li><NavLink to="/contact" activeClassName="active">Contact Us</NavLink></li>
+              <li><NavLink to="/about" activeClassName="active">About us</NavLink></li>
+              <li><NavLink to="/careers" activeClassName="active">Careers</NavLink></li>
+              <li><NavLink to="/build" activeClassName="active">Build your package</NavLink></li>
+            </ul>
+          </div>
+        </nav>
+            <a id="copywrite">This is copywrited by people who do stuff</a> 
       </div>
     );
   };

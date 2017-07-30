@@ -7,12 +7,13 @@
     }
     h1, h2, ul, li {
       font-family: Helvetica, Arial, sans-serif;
-         text-align: center;
+      font-size: 15px;
+      text-align: center;
     }
 
     p {
       font-family: Helvetica, Arial, sans-serif;
-      font-size: 20px;
+      font-size: 25px;
       padding: 20px;
     }
 
@@ -21,11 +22,11 @@
     }
 
     ul.header li {
-
       display: inline;
       list-style-type: none;
       margin: 0;
     }
+    
     ul.header {
       background-color: #909090;
       padding: 0;
@@ -34,8 +35,12 @@
       color: #FFF;
       font-weight: bold;
       text-decoration: none;
-      padding: 20px;
+      padding: 15px;
       display: inline-block;
+    }
+    .hover-menu {
+      /* display: none; */
+      position: absolute
     }
     .content {
       background-color: #FFF;
@@ -54,8 +59,8 @@
     #mainLogo{
       position: absolute;
       left:0;
-     width: 300px;
-    height: auto;
+      width: 300px;
+      height: auto;
     }
 
     #contact_details{
@@ -79,6 +84,8 @@
     .content{
       position: absolute;
       top:200px;
+      left:20px;
+      right:20px;
     }
     .footer{
       position: absolute;
