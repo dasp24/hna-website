@@ -1,26 +1,41 @@
-const website = React.createClass({
-  render: function() {
+import React from 'react';
+import {Route,
+        BrowserRouter as Router,
+        Redirect,
+        NavLink,
+        Switch,
+        Link 
+      } from 'react-router-dom';
+  
+const Website = (props) => {
     return (
       <div>
-        <h1 id='contact_details'>0161 202 1199</h1>
-        <img src={('./newlogo.jpg')} id='logo'/>
-        <ul className="header">
-          <li><IndexLink to="/" activeClassName="active">Home</IndexLink></li>
-          <li><Link to="/artist" activeClassName="active">Artist Trailers</Link></li>
-          <li><Link to="/costume" activeClassName="active">Costume Trailers</Link></li>
-          <li><Link to="/makeup" activeClassName="active">Makeup Trailers</Link></li>
-          <li><Link to="/offices" activeClassName="active">Production Offices</Link></li>
-          <li><Link to="/dining" activeClassName="active">Dining Trailers</Link></li>
-          <li><Link to="/honey" activeClassName="active">Honey Wagons</Link></li>
-          <li><Link to="/tech" activeClassName="active">Technical vehicles</Link></li>
-          <li><Link to="/support" activeClassName="active">Support</Link></li>
-        </ul>
-        <div className="content">
-          {this.props.children}
+         <div>
+        <img src={('./newlogo.jpg')} id='mainLogo'/>
+        <a id='contact_details'>0161 202 1199</a>
+        <img src={('./telephoneSymbol.jpeg')} id='telephone'/>
+          <div className='col-md-6'>
+            <a href='https://www.facebook.com/HnaFacilitiestvFilmLocationFacilityVehicles/'><img  className='logo' src={('./fbLogo.jpeg')} /></a>
+            <a  href='https://twitter.com/hnafacilities'><img className='logo' src={('./instagramLogo.png')}/></a>
+            <a  href='https://www.instagram.com/?hl=en'><img className='logo' src={('./twitterLogo.jpeg')}/></a>
+          </div>
         </div>
+        <ul className="header">
+            <li><NavLink to="/" exact activeClassName="active">Home</NavLink></li>  
+          
+          <li><NavLink to="/star" activeClassName="active">Star Trailers</NavLink></li>
+          <li><NavLink to="/2-way" activeClassName="active">2-way Trailers</NavLink></li>
+    
+          <li><NavLink to="/costume" activeClassName="active">Costume Trailers</NavLink></li>
+        </ul>
+        <ul className="footer">
+          <li><NavLink to="/contact" activeClassName="active">Contact Us</NavLink></li>
+          <li><NavLink to="/about" activeClassName="active">About us</NavLink></li>
+        </ul>
+        <a id="copywrite">This is copywrited by people who do stuff</a> 
       </div>
-    )
-  }
-});
+    );
+  };
 
-export default website;
+
+    export default Website;
