@@ -26,10 +26,10 @@ const Website = (props) => {
               <li className="dropdown">
                 <a className="dropdown-toggle" data-toggle="dropdown">Artist Trailers<span className="caret"></span></a>
                 <ul className="dropdown-menu">
-                  <li><NavLink to="/star">Star Trailers</NavLink></li>
-                  <li><NavLink to="/2-way">2-way Trailers</NavLink></li>
-                  <li><NavLink to="/3-way">3-way Trailers</NavLink></li>
-                  <li><NavLink to="/4-way">4-way Trailers</NavLink></li>
+                  <li><NavLink to="/artist/star">Star Trailers</NavLink></li>
+                  <li><NavLink to="/artist/2-way">2-way Trailers</NavLink></li>
+                  <li><NavLink to="/artist/3-way">3-way Trailers</NavLink></li>
+                  <li><NavLink to="/artist/4-way">4-way Trailers</NavLink></li>
                 </ul>
               </li>
             <li><NavLink to="/costume" activeClassName="active">Costume Trailers</NavLink></li>
@@ -37,12 +37,12 @@ const Website = (props) => {
             <li><NavLink to="/production" activeClassName="active">Production trailers</NavLink></li>
             <li><NavLink to="/dining" activeClassName="active">Dining Trailers</NavLink></li>
             <li><NavLink to="/honey" activeClassName="active">Honey Wagons</NavLink></li>
-            <li><NavLink to="/technical" activeClassName="active">Technicals Vehicles</NavLink></li>
+            <li><NavLink to="/technical" activeClassName="active">Technical Vehicles</NavLink></li>
             <li className="dropdown">
                 <a className="dropdown-toggle" data-toggle="dropdown">Support Vehicles<span className="caret"></span></a>
                 <ul className="dropdown-menu">
-                   <li><NavLink to="/water" activeClassName="active">Water Bowsers</NavLink></li>
-                   <li><NavLink to="/generators" activeClassName="active">Generators</NavLink></li>
+                   <li><NavLink to="/support/water" activeClassName="active">Water Bowsers</NavLink></li>
+                   <li><NavLink to="/support/generators" activeClassName="active">Generators</NavLink></li>
                 </ul>
               </li>
           </ul>

@@ -31,10 +31,10 @@ const App = () => {
     <Switch > 
         <div className='content'>
         <Route exact path="/" component={Home}/>
-        <Route path="/star" component={Star}/>
-        <Route path="/2-way" component={TwoWay}/>
-        <Route path="/3-way" component={ThreeWay}/>
-        <Route path="/4-way" component={FourWay}/>
+        <Route path="/artist/star" component={Star}/>
+        <Route path="/artist/2-way" component={TwoWay}/>
+        <Route path="/artist/3-way" component={ThreeWay}/>
+        <Route path="/artist/4-way" component={FourWay}/>
         <Route path="/costume" component={Costume} />
         <Route path="/contact" component={Contact} />
         <Route path="/about" component={About} />
@@ -45,8 +45,8 @@ const App = () => {
         <Route path="/dining" component={Dining} />
         <Route path="/honey" component={Honey} />
         <Route path="/technical" component={Technical} />
-        <Route path="/water" component={Water} />
-        <Route path="/generators" component={Generators} />
+        <Route path="/support/water" component={Water} />
+        <Route path="/support/generators" component={Generators} />
         </div>
     </Switch>   
     </div>

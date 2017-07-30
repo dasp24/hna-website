@@ -11378,10 +11378,10 @@ var App = function App() {
                     'div',
                     { className: 'content' },
                     _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _Home2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: '/star', component: _Star2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: '/2-way', component: _TwoWay2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: '/3-way', component: _ThreeWay2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: '/4-way', component: _FourWay2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: '/artist/star', component: _Star2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: '/artist/2-way', component: _TwoWay2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: '/artist/3-way', component: _ThreeWay2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: '/artist/4-way', component: _FourWay2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: '/costume', component: _Costume2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: '/contact', component: _Contact2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _About2.default }),
@@ -11392,8 +11392,8 @@ var App = function App() {
                     _react2.default.createElement(_reactRouterDom.Route, { path: '/dining', component: _Dining2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: '/honey', component: _Honey2.default }),
                     _react2.default.createElement(_reactRouterDom.Route, { path: '/technical', component: _Technical2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: '/water', component: _Water2.default }),
-                    _react2.default.createElement(_reactRouterDom.Route, { path: '/generators', component: _Generators2.default })
+                    _react2.default.createElement(_reactRouterDom.Route, { path: '/support/water', component: _Water2.default }),
+                    _react2.default.createElement(_reactRouterDom.Route, { path: '/support/generators', component: _Generators2.default })
                 )
             )
         )
@@ -25914,7 +25914,7 @@ var Website = function Website(props) {
               null,
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { to: '/star' },
+                { to: '/artist/star' },
                 'Star Trailers'
               )
             ),
@@ -25923,7 +25923,7 @@ var Website = function Website(props) {
               null,
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { to: '/2-way' },
+                { to: '/artist/2-way' },
                 '2-way Trailers'
               )
             ),
@@ -25932,7 +25932,7 @@ var Website = function Website(props) {
               null,
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { to: '/3-way' },
+                { to: '/artist/3-way' },
                 '3-way Trailers'
               )
             ),
@@ -25941,7 +25941,7 @@ var Website = function Website(props) {
               null,
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { to: '/4-way' },
+                { to: '/artist/4-way' },
                 '4-way Trailers'
               )
             )
@@ -25998,7 +25998,7 @@ var Website = function Website(props) {
           _react2.default.createElement(
             _reactRouterDom.NavLink,
             { to: '/technical', activeClassName: 'active' },
-            'Technicals Vehicles'
+            'Technical Vehicles'
           )
         ),
         _react2.default.createElement(
@@ -26018,7 +26018,7 @@ var Website = function Website(props) {
               null,
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { to: '/water', activeClassName: 'active' },
+                { to: '/support/water', activeClassName: 'active' },
                 'Water Bowsers'
               )
             ),
@@ -26027,7 +26027,7 @@ var Website = function Website(props) {
               null,
               _react2.default.createElement(
                 _reactRouterDom.NavLink,
-                { to: '/generators', activeClassName: 'active' },
+                { to: '/support/generators', activeClassName: 'active' },
                 'Generators'
               )
             )
@@ -26117,11 +26117,42 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var About = function About() {
   return _react2.default.createElement(
     'div',
-    null,
+    { id: 'about' },
+    _react2.default.createElement('img', { src: './aboutus.jpg' }),
     _react2.default.createElement(
-      'h2',
+      'p',
       null,
-      'Who are we?'
+      'Since supplying our first trailers to ITV\u2019s successful crime drama, Cracker in 1992, HNA has built up an extensive track record providing facilities vehicles to TV and film throughout the UK and mainland Europe. For over two decades, HNA Facilities has been involved in literally thousands of dramas and feature film productions, providing serviced vehicle hire for on-location support.'
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      'We operate a comprehensive range of vehicles to cater for all requirements, large or small, using experienced, friendly drivers. Our hands-on 24/7 management approach ensures your job runs smoothly every time. Our bespoke, high tech hire fleet comprises over 100 vehicles, including Artist Trailers, Costume Trailers, Make up Trailers, Honeywagons, Dining Trailers and Production Offices. In addition, our fleet of support vehicles include Props Trucks, Camera Cars, 80-110 KVa Generators, Water bowsers and Deisel Trucks to deliver fuel to Sparks\u2019 and Generators throughout the shoot.'
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      'Our in-house fleet manager, Tony Grognet, runs a full programme of maintenance and improvements in our workshop. Our vehicles can be adapted for your shoot/ crew\u2019s requirements.'
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      'As a father and son business, we take a hands-on approach, offering 24/7 support and a single dedicated point of contact, right through from quoting, to logistics and running the location crews, to deliver a friendly, personal service, in the most professional, efficient way. We also maintain a strong compliance profile in all aspects of health and safety, risk assessments, employee and driver vetting procedures, VOSA driving standards, as well as comprehensive insurance covers'
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      'By providing the latest high quality vehicles and friendly, experienced vehicle operators, we\u2019ve gained a strong reputation within the media industry and feature on all leading production houses\u2019 preferred supplier lists. Our client base is largely through experience and word of mouth; in short, customers like what they see, and they use us again and again and again. Whatever your production or budget requirements, here at HNA, we guarantee a competitive, unrivalled quality and service. Every time. Why not build you own package using our quote estimator or get in touch for a more detailed breakdown of how we can help you.'
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      'Mark Cohen and Michael S Cohen'
+    ),
+    _react2.default.createElement(
+      'p',
+      null,
+      'Directors 1992 - 2017'
     )
   );
 };
@@ -26249,36 +26280,6 @@ var Home = function Home() {
       'h2',
       null,
       'Welcome To HNA Facilities'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'Since supplying our first trailers to ITV\u2019s successful crime drama, Cracker in 1992, HNA has built up an extensive track record providing facilities vehicles to TV and Film throughout the UK and mainland Europe.'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'For twenty-five years, HNA Facilities has been involved in thousands of dramas and feature film productions, providing serviced vehicle hire for on-location support.'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'HNA operates a comprehensive range of vehicles to cater for all requirements, large or small, using experienced, friendly drivers. Our hands-on 24/7 management approach ensures your job runs smoothly every time.'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'Since supplying our first trailers to ITV\u2019s successful crime drama, Cracker in 1992, HNA has built up an extensive track record providing facilities vehicles to TV and Film throughout the UK and mainland Europe.'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'For twenty-five years, HNA Facilities has been involved in thousands of dramas and feature film productions, providing serviced vehicle hire for on-location support.'
-    ),
-    _react2.default.createElement(
-      'p',
-      null,
-      'HNA operates a comprehensive range of vehicles to cater for all requirements, large or small, using experienced, friendly drivers. Our hands-on 24/7 management approach ensures your job runs smoothly every time.'
     ),
     _react2.default.createElement(
       'p',
@@ -26445,11 +26446,7 @@ var Careers = function Careers() {
   return _react2.default.createElement(
     'div',
     null,
-    _react2.default.createElement(
-      'h2',
-      null,
-      'Get a job'
-    )
+    _react2.default.createElement('img', { src: './Driver-Job-Alert.jpg' })
   );
 };
 
