@@ -32,16 +32,18 @@
       padding: 0;
     }
     ul.header li a {
-      color: #FFF;
+      color: white;
+      font-size: 10px;
       font-weight: bold;
       text-decoration: none;
-      padding: 15px;
+      padding: 19px;
       display: inline-block;
     }
-    .hover-menu {
-      /* display: none; */
-      position: absolute
+
+    li.dropdown li a{
+      color:black;
     }
+
     .content {
       background-color: #FFF;
       padding: 20px;
@@ -85,7 +87,6 @@
       position: absolute;
       top:200px;
       left:20px;
-      right:20px;
     }
     .footer{
       position: absolute;

@@ -20,7 +20,6 @@ const Website = (props) => {
               <a  href='https://www.instagram.com/?hl=en'><img className='logo' src={('./twitterLogo.jpeg')}/></a>
             </div>
         </div>
-
         <div className="container-fluid">
           <ul className="header nav navbar-nav">
             <li><NavLink to="/" exact activeClassName="active">Home</NavLink></li>  
@@ -39,16 +38,16 @@ const Website = (props) => {
             <li><NavLink to="/dining" activeClassName="active">Dining Trailers</NavLink></li>
             <li><NavLink to="/honey" activeClassName="active">Honey Wagons</NavLink></li>
             <li><NavLink to="/technical" activeClassName="active">Technicals Vehicles</NavLink></li>
-            <li>
-              <a>Support Vehicles</a>
-              <ul className="hover-menu">
-                <li><NavLink to="/water" activeClassName="active">Water Bowsers</NavLink></li>
-                <li><NavLink to="/generators" activeClassName="active">Generators</NavLink></li>
-              </ul>
-            </li>
+            <li className="dropdown">
+                <a className="dropdown-toggle" data-toggle="dropdown">Support Vehicles<span className="caret"></span></a>
+                <ul className="dropdown-menu">
+                   <li><NavLink to="/water" activeClassName="active">Water Bowsers</NavLink></li>
+                   <li><NavLink to="/generators" activeClassName="active">Generators</NavLink></li>
+                </ul>
+              </li>
           </ul>
         </div>
-        <nav className="navbar navbar-inverse navbar-fixed-bottom">
+        <nav className="footer navbar navbar-inverse navbar-fixed-bottom">
           <div className="container-fluid">
             <div className="navbar-header">
               <a className="navbar-brand">HnA Facilities</a>
@@ -61,7 +60,6 @@ const Website = (props) => {
             </ul>
           </div>
         </nav>
-            <a id="copywrite">This is copywrited by people who do stuff</a> 
       </div>
     );
   };
