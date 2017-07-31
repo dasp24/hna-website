@@ -164,3 +164,14 @@ ul.footer li {
 #about p{
   font-size: 12px;
 }
+
+.twitter {
+position: absolute;
+right:0;
+
+ 
+}
+
+.home {
+  display: inline;
+}
