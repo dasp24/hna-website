@@ -24,7 +24,8 @@ const Home = () => {
              className="text-right"
               options={{
                 username: 'HNA Facilities',
-                height: '1000'
+                height: '650',
+                width: '500'
               }}
             />
             </div>
